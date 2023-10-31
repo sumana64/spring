@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<appender name="FILE"
+class="ch.qos.logback.core.rolling.RollingFileAppender">
+<file>C:\Users\Nirmala Jagadish\OneDrive\Desktop\x-workz\for eclipse\WestSide\westSidelog.log</file>
+<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+<fileNamePattern>C:\Users\Nirmala Jagadish\OneDrive\Desktop\x-workz\for eclipse\WestSide\westSidelog.%d{yyyy-MM-dd}.log</fileNamePattern>
+</rollingPolicy>
+<layout class="ch.qos.logback.classic.PatternLayout">
+<Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</Pattern>
+</layout>
+</appender>
+
+<logger name="org.springframework" level="debug" additivity="false">
+<appender-ref ref="FILE" />
+</logger>
+
+<root level="INFO">
+<appender-ref ref="FILE" />
+</root>
+
+</configuration>

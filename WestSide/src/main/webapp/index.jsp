@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ background-image: url('https://t4.ftcdn.net/jpg/03/98/90/87/360_F_398908727_0kTM
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-danger">
+<nav class="navbar navbar-expand-lg bg-secondary">
 		<div class="container-fluid">
         
         <a class="navbar-brand" href="#">
@@ -37,6 +38,13 @@ background-image: url('https://t4.ftcdn.net/jpg/03/98/90/87/360_F_398908727_0kTM
 
 					<li class="nav-item"><a class="nav-link" href="login.html">Login</a>
 					</li>
+					
+					<li class="nav-item"><a class="nav-link"
+						href="FindAll.jsp">FindAll</a></li>
+					
+					<li class="nav-item"><a class="nav-link"
+						href="FindById.jsp">FindById</a></li>
+					
 
                     </ul>
 					<form class="d-flex" role="search">

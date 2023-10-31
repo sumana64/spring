@@ -13,8 +13,9 @@
 </head>
 <body>
 	<form action="register" method="post">
-
+	
 		<div class="p-3 mb-2 bg-info text-emphasis-warning">
+		
 
 			<div class="mb-3">
 				<label class="form-label">UserName</label> <input type="text"
@@ -64,16 +65,10 @@
 				
 			</select> <br> <input type="submit" class="btn btn-success">
 	</form>
-	
-	<h1>userName:${dto.userName}</h1>
-	<h1>email:${dto.email}</h1>
-	<h1>phoneNo:${dto.phoneNo}</h1>
-	<h1>address:${dto.address}</h1>
-	<h1>password:${dto.passWord}</h1>
-	<h1>gender:${dto.gender}</h1>
-	<h1>shopppingFor:${dto.shoppingFor}</h1>
-	
-	
-
+	         <c:forEach items="${voilation}" var="voilation">
+              <h1>${voilation.messageTemplate}</h1>
+	          </c:forEach>
+	         
+            
 </body>
 </html>
